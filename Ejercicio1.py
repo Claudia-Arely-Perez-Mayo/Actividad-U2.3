@@ -14,6 +14,7 @@ async def mostar_inicio():
         <h3>Bienvenidos</h3>
         <p>Este sitio pertenece al Equipo1 y mostrará los datos de los integrantes</p>
 		<a href="claudia.html"> Claudia Arely </a>
+        <a href="fabian.html"> Fabian CG </a>
     </body>
 	</html>
     """

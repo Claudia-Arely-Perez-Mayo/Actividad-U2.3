@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>{{nom}}</title>
+        <link href="{{ url_for('estáticos', path='/Estilos.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <div id="titulos">Sitio Personal de {{nom}}</div>
+        <div id="parrafos">
+            <ul>
+                <li><strong>Matrícula:</strong> {{matri}}</li>
+                <li><strong>Nombre:</strong>  {{nom}}</li>
+                <li><strong>APaterno:</strong> {{apat}}</li>
+                <li><strong>AMaterno:</strong> {{amat}}</li>
+                <li><strong>Edad:</strong> {{edad}}</li>
+                <li><strong>Correo:</strong> {{correo}}</li>
+                <li><strong>Teléfono:</strong> {{teléfono}}</li>
+                <li><strong>Carrera:</strong> {{carrera}}</li>
+            </ul>
+        </div>
+    </body>
+</html>
+

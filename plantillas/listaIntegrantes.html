@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>integrantes</title>
+        <link href="{{ url_for('estáticos', path='/Estilos.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <div id="titulos">Lista de Integrantes</div>
+        <div id="parrafos">
+            <table>
+                <thead>
+                <tr>
+                    <th>Matrícula</th>
+                    <th>Nombre</th>
+                    <th>APaterno</th>
+                    <th>AMaterno</th>
+                    <th>Edad</th>
+                    <th>Correo</th>
+                    <th>Teléfono</th>
+                    <th>Carrera</th>
+                </tr>
+                </thead>
+                <tbody>
+                    {% for fila in lista %}
+                        {% for campo in fila %}
+                        <tr>
+                            <td>{{ fila[campo] }}</td>
+                        </tr>
+                        {% endfor %}
+                    {% endfor %}
+                    <tr>
+                        <form method="POST" action="/agregar">
+                        <td><input type="text" name="nuevoalumno" required></td>
+                        <td style="text-align: center;"><button type="submit">Agregar</button></td>
+                        </form>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

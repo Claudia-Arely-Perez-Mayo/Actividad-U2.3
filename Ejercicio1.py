@@ -16,6 +16,7 @@ async def mostar_inicio():
 		<a href="claudia.html"> Claudia Arely </a>
         <a href="fabian.html"> Fabian CG </a>
         <a href="daniel.html"> Daniel VV </a>
+        <a href="giobanni.html"> giobanni sdc </a>
     </body>
 	</html>
     """
